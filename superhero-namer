@@ -1,0 +1,25 @@
+// P08 superhero name
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int gradeLevel = 0;
+    int birthMonth = 0;
+    string firstNameBank[12] = { "Murder","Arsonest","War Criminal","Alien","Mister", "Sir","Lady","Freddy","Bonnie","Chica","Foxy","Purple Guy" };
+    string lastNameBank[3] = { "DIRT DUCK","Titan","Diety"};
+
+    cout << "Hi! What's your birth month and grade level.\n";
+    cout << "If you do give the information then we can give you superhero name.\n";
+    cout << "Start with your birth month.\n";
+    cin >> birthMonth;
+    birthMonth--;
+    cout << "Now your grade level.\n";
+    cin >> gradeLevel;
+    gradeLevel = gradeLevel - 6;
+    cout << "Your superhero name is: " << firstNameBank[birthMonth] << " " << lastNameBank[gradeLevel] << endl;
+
+    return 0;
+
+}
